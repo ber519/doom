@@ -7,16 +7,21 @@ public class EnemyFollow : MonoBehaviour
     private float speed = 3f;
     [SerializeField]
     private float yPosition = 2f;
+    [SerializeField]
+    private float damage = 20f;
+    [SerializeField]
+    private float pushForce = 5f;
     private Transform player;
     private bool isFollowing = true;
     private  Animator animator;
     private void Start()
     {
         animator = GetComponent<Animator>();
+        GetComponent<Health>().InitializeHealth();
     }
     private void OnEnable()
     {
-        player = GameObject.FindGameObjectWithTag("player").transform;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
     public void TakeDamage()
     {
@@ -34,6 +39,7 @@ public class EnemyFollow : MonoBehaviour
     public void Die()
     {
         StopAllCoroutines();
+        GetComponent<Collider>().enabled = false;
         isFollowing = false;
         animator.Play("Death", 0, 0f);
         StartCoroutine(DieCoroutine());
@@ -50,5 +56,13 @@ public class EnemyFollow : MonoBehaviour
         Vector3 targetPosition = new Vector3(player.position.x,yPosition, player.position.z);
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
         transform.LookAt(targetPosition);
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            collision.gameObject.GetComponent<player>().PushBack(transform, pushForce);
+            collision.gameObject.GetComponent<Health>().TakeDamage(damage);
+        }
     }
 }

@@ -14,7 +14,7 @@ public class Health : MonoBehaviour
     private UnityEvent onDamageTaken;
     private float currentHealth;
     public float CurrentHealth => currentHealth;
-    public void InitiallizeHealth()
+    public void InitializeHealth()
     {
         currentHealth = maxHealth;
         UpdateHealthBar();

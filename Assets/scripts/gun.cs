@@ -51,6 +51,13 @@ public void GrabGun(Transform gunPosition, Text bulletsText)
     {
         ammoText.text = $"{cartridgeBullets} / {totalBullets}";
     }
+    private void DamageEnemy(GameObject enemy)
+    {
+        if (enemy.CompareTag("Enemy"))
+        {
+            enemy.GetComponent<Health>().TakeDamage(gunData.damage);
+        }
+    }
     public void Shoot()
     {
         float rayDistance = 1000f;
@@ -59,6 +66,7 @@ public void GrabGun(Transform gunPosition, Text bulletsText)
         if (Physics.Raycast(ray, out RaycastHit hit, rayDistance))
         {
             targetPoint = hit.point;
+            DamageEnemy(hit.collider.gameObject);
         }
         else
         {
