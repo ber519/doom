@@ -74,7 +74,8 @@ public void GrabGun(Transform gunPosition, Text bulletsText)
         }
         Vector3 direction = (targetPoint - transform.position).normalized;
         bulletPivot.forward = direction;
-        GameObject bullet = Instantiate(bulletPrefab, bulletPivot.position, bulletPivot.rotation);
+        GameObject bullet = PoolManager.Instance.GetObject(bulletPrefab, bulletPivot.position);
+        bullet.transform.rotation = bulletPivot.rotation;
         bullet.transform.LookAt(targetPoint);
         SoundManager.instance.Play(gunData.shootSoundName);
         animator.Play("Shoot", 0, 0f);
