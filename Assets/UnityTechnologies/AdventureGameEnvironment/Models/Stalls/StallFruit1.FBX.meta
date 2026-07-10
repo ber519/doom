@@ -1,9 +1,46 @@
 fileFormatVersion: 2
 guid: dd627718996459d45a4da43446112d69
+AssetOrigin:
+  serializedVersion: 1
+  productId: 246189
+  packageName: Adventure Game Environment Pack | URP
+  packageVersion: 2.0
+  assetPath: Assets/UnityTechnologies/AdventureGameEnvironment/Models/Stalls/StallFruit1.FBX
+  uploadId: 871060
 ModelImporter:
-  serializedVersion: 21300
+  serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MarketFruit
+    second: {fileID: 2100000, guid: 27544d2119329f84bb2f86410bb1cd96, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MarketPots
+    second: {fileID: 2100000, guid: a268940174e69244783abd005aed4805, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MarketPriceTags
+    second: {fileID: 2100000, guid: 8f9e43ad3c5438343879a8c8a47a075a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MarketShadeCloth
+    second: {fileID: 2100000, guid: d0e866664d5f00045a32eddce568118c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MarketSigns
+    second: {fileID: 2100000, guid: b05808def1417e04bab1007cbcb9147a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MarketStalls
+    second: {fileID: 2100000, guid: 37a81a399fe27fc4c8eebb0b458622ee, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -16,8 +53,6 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 1
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -40,6 +75,7 @@ ModelImporter:
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
+    importPhysicalCameras: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -57,6 +93,9 @@ ModelImporter:
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
     optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
@@ -67,6 +106,7 @@ ModelImporter:
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -99,15 +139,9 @@ ModelImporter:
   humanoidOversampling: 1
   avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 0
   remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 246189
-  packageName: Adventure Game Environment Pack | URP
-  packageVersion: 2.0
-  assetPath: Assets/UnityTechnologies/AdventureGameEnvironment/Models/Stalls/StallFruit1.FBX
-  uploadId: 871060

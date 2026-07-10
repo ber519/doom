@@ -142,7 +142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyTank
   animator: {fileID: 3972618523732213261}
   damage: 50
-  range: 7
+  range: 15
   fireRate: 4
   shootPivot: {fileID: 8645202141225662401}
   bulletPrefab: {fileID: 3351972881192890599, guid: 519ba4811048ab741a1246ccc9977319, type: 3}
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
   healthBar: {fileID: 3892040121332282782}
-  maxHealth: 100
+  maxHealth: 300
   onDeath:
     m_PersistentCalls:
       m_Calls:
@@ -226,6 +226,9 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   onDamageTaken:
+    m_PersistentCalls:
+      m_Calls: []
+  onHeal:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &4565391716834721267

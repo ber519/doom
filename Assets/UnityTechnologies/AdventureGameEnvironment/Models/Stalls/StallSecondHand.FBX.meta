@@ -1,9 +1,51 @@
 fileFormatVersion: 2
 guid: b72feb866ea89cc4bbfd09b80c4b7029
+AssetOrigin:
+  serializedVersion: 1
+  productId: 246189
+  packageName: Adventure Game Environment Pack | URP
+  packageVersion: 2.0
+  assetPath: Assets/UnityTechnologies/AdventureGameEnvironment/Models/Stalls/StallSecondHand.FBX
+  uploadId: 871060
 ModelImporter:
-  serializedVersion: 21300
+  serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GlassesMaterial
+    second: {fileID: 2100000, guid: 91bf5b01a966c0647beb57bfca8f23a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MarketCrates
+    second: {fileID: 2100000, guid: c8d2b7b9df5cb13428808cf4e85eec58, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MarketPriceTags
+    second: {fileID: 2100000, guid: a97f58eccdc3c944a8ab3a143b57e892, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MarketProsthetics
+    second: {fileID: 2100000, guid: 0cba226357c2dca47b2f6940d27ef8fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MarketShadeCloth
+    second: {fileID: 2100000, guid: 268fa5c2b7da62c40a88c30c42ddc27a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MarketSigns
+    second: {fileID: 2100000, guid: a3ab576f3b0736e44910b17b8fdae286, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MarketStalls
+    second: {fileID: 2100000, guid: dc382fe3c4e00184db69002d7e48da07, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -16,8 +58,6 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 1
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -40,6 +80,7 @@ ModelImporter:
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
+    importPhysicalCameras: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -57,6 +98,9 @@ ModelImporter:
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
     optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
@@ -67,6 +111,7 @@ ModelImporter:
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -99,15 +144,9 @@ ModelImporter:
   humanoidOversampling: 1
   avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 0
   remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 246189
-  packageName: Adventure Game Environment Pack | URP
-  packageVersion: 2.0
-  assetPath: Assets/UnityTechnologies/AdventureGameEnvironment/Models/Stalls/StallSecondHand.FBX
-  uploadId: 871060
