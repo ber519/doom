@@ -113,7 +113,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8232380237127637164}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 846.8, y: 0.44, z: 100.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -155,8 +155,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.15, y: 9.26, z: 7.16}
-  m_Center: {x: 0, y: 0.68, z: 1.41}
+  m_Size: {x: 3.21, y: 7.02, z: 3.81}
+  m_Center: {x: 0, y: 0.87, z: 0.25}
 --- !u!114 &6210928196651633214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,6 +174,7 @@ MonoBehaviour:
   gunData: {fileID: 11400000, guid: 7eade8209e9c2e4459da4e3e461a6827, type: 2}
   bulletPivot: {fileID: 7807444678642853293}
   bulletPrefab: {fileID: 3351972881192890599, guid: de806bee4dd89bc4ba94e8dfb35e6a14, type: 3}
+  fireParticlesPrefab: {fileID: 1141330259687333427, guid: 6718dc24203da53468af9ada8fef7d6d, type: 3}
 --- !u!1001 &7915893135506248630
 PrefabInstance:
   m_ObjectHideFlags: 0

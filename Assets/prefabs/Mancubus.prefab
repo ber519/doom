@@ -146,6 +146,7 @@ MonoBehaviour:
   fireRate: 4
   shootPivot: {fileID: 8645202141225662401}
   bulletPrefab: {fileID: 3351972881192890599, guid: 519ba4811048ab741a1246ccc9977319, type: 3}
+  fireParticlesPrefab: {fileID: 725748389856807714, guid: 4bda94453d2ca7444a0fff05b2d425f5, type: 3}
   nextFireTime: 0
   speed: 1
 --- !u!65 &4308386092145034163

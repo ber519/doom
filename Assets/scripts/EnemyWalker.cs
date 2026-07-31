@@ -7,6 +7,10 @@ public class EnemyWalker : Enemy
    private float speed = 2f;
    [SerializeField]
    private float attackRange = 1.5f;
+   [SerializeField]
+   private float damageRange = 2f;
+   [SerializeField]
+   private float attackTime = 1f;
    private enum State
     {
         Appearing,
@@ -16,8 +20,10 @@ public class EnemyWalker : Enemy
     }
     private State currentState = State.Appearing;
    public bool IsInRange => Vector3.Distance(transform.position, player.position) <= attackRange;
+   public bool IsInDamageRange => Vector3.Distance(transform.position, player.position) <= damageRange;
    public override void OnEnable()
     {
+        SoundManager.instance.Play("Hellknight_appear");
         base.OnEnable();
         currentState = State.Appearing;
         StartCoroutine(AppearCoroutine());
@@ -47,9 +53,26 @@ public class EnemyWalker : Enemy
                 transform.LookAt(player);
             }
         }
+        transform.LookAt(player);
     }
     private IEnumerator AttackCoroutine()
     {
-        yield return null;
+        SoundManager.instance.Play("Hellknight_attack");
+        animator.Play("Attack", 0, 0f);
+        yield return new WaitForSeconds(attackTime);
+        if (IsInDamageRange)
+        {
+            player.GetComponent<Health>().TakeDamage(damage);
+            player.GetComponent<player>().PushBack(transform, 5f);
+        }
+        yield return animator.WaitForCurrentAnimation();
+        currentState = State.Following;
+    }
+    public override void Die()
+    {
+        currentState = State.Death;
+        rb.isKinematic = true;
+        SoundManager.instance.Play("Hellknight_die");
+        base.Die();
     }
 }

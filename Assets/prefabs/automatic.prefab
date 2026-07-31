@@ -33,6 +33,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6428071321602114191}
+  - {fileID: 5451585426171322318}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &-7672951325751043423
@@ -85,8 +86,40 @@ MonoBehaviour:
   animator: {fileID: 4712462169618681593}
   rotateScript: {fileID: -7672951325751043423}
   gunData: {fileID: 11400000, guid: cab81b196fdf34544ac888cb23c7228e, type: 2}
-  bulletPivot: {fileID: 7807444678642853293, guid: 2fd78ed095502bc4ca1f8f01fb562083, type: 3}
+  bulletPivot: {fileID: 5451585426171322318}
   bulletPrefab: {fileID: 3351972881192890599, guid: de806bee4dd89bc4ba94e8dfb35e6a14, type: 3}
+  fireParticlesPrefab: {fileID: 5880797563127281583, guid: 265d3a5ba69981a4698ceabcedf368b0, type: 3}
+--- !u!1 &7997769453203896402
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5451585426171322318}
+  m_Layer: 0
+  m_Name: Bulletpivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5451585426171322318
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7997769453203896402}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.049, y: 0.104, z: 0.687}
+  m_LocalScale: {x: 0.67, y: 0.67, z: 0.67}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 7597735876042491494}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &8327070012301521973
 PrefabInstance:
   m_ObjectHideFlags: 0
