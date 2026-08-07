@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 5630201110443928383}
   - component: {fileID: 212984320417985710}
   - component: {fileID: 3761338310932655145}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hellknight
   m_TagString: Enemy
   m_Icon: {fileID: 0}

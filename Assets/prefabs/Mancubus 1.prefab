@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 4308386092145034163}
   - component: {fileID: 738328408440509582}
   - component: {fileID: 8700277383981582544}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mancubus 1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
