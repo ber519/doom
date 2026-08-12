@@ -2342,13 +2342,23 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 4764808344475443652, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
+      propertyPath: inputManager
+      value: 
+      objectReference: {fileID: 1474437673}
+    - target: {fileID: 4764808344475443652, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
+      propertyPath: onGunDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 671984820}
+    - target: {fileID: 4764808344475443652, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
+      propertyPath: onGunGrabbed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 671984820}
+    m_RemovedComponents:
+    - {fileID: 2519420607420676699, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1773623360729482, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
-      insertIndex: 1
-      addedObject: {fileID: 1787170600}
     - targetCorrespondingSourceObject: {fileID: 1773623360729482, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1787170607}
@@ -7769,7 +7779,7 @@ MonoBehaviour:
   onTriggered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1787170600}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: player, Assembly-CSharp
         m_MethodName: Die
         m_Mode: 1
@@ -9956,6 +9966,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2de8e26126dc914abef14f82386cc7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InputManager
+  OnPKeyPressed:
+    m_PersistentCalls:
+      m_Calls: []
+  OnScrollUp:
+    m_PersistentCalls:
+      m_Calls: []
+  OnScrollDown:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &1474437674
 Transform:
   m_ObjectHideFlags: 0
@@ -11053,11 +11072,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6946868759442727253, guid: 7559398edaea23b43abe696f53315da2, type: 3}
---- !u!4 &1706799282 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4979408632868689014, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
-  m_PrefabInstance: {fileID: 289526802}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1710659632 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6327854012048715749, guid: 34bd3bd594616834d941b634c8347a17, type: 3}
@@ -11925,51 +11939,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1773623360729482, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
   m_PrefabInstance: {fileID: 289526802}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1787170600
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1787170593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89c65d36e8c06024bbb4df5dc6dad713, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::player
-  gunPosition: {fileID: 1706799282}
-  inputManager: {fileID: 1474437673}
-  ammoText: {fileID: 1762528877}
-  onGunGrabbed:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 671984820}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  onGunDropped:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 671984820}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1787170607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11987,7 +11956,7 @@ MonoBehaviour:
   onDeath:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1787170600}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: player, Assembly-CSharp
         m_MethodName: Die
         m_Mode: 1
@@ -12065,13 +12034,13 @@ MonoBehaviour:
           m_StringArgument: health_pickup
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: InstantiateObject, Assembly-CSharp
-        m_MethodName: InstatiatePrefab
-        m_Mode: 2
+      - m_Target: {fileID: 762677816}
+        m_TargetAssemblyTypeName: Pool, Assembly-CSharp
+        m_MethodName: InstantiateObject
+        m_Mode: 0
         m_Arguments:
-          m_ObjectArgument: {fileID: 1706799282}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: health_pickup
@@ -14229,6 +14198,7 @@ GameObject:
   - component: {fileID: 2013830964}
   - component: {fileID: 2013830966}
   - component: {fileID: 2013830965}
+  - component: {fileID: 2013830967}
   m_Layer: 5
   m_Name: Scope
   m_TagString: Untagged
@@ -14293,6 +14263,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2013830963}
   m_CullTransparentMesh: 1
+--- !u!114 &2013830967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013830963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc243d21abb156c449973bcdecd292a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Scope
+  animator: {fileID: 0}
+  idleColor: {r: 0.125534, g: 0.8584906, b: 0.81834865, a: 1}
+  aimingColor: {r: 0.8584906, g: 0.13363297, b: 0.13363297, a: 1}
+  scopeImage: {fileID: 0}
 --- !u!1001 &2017829056
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15300,15 +15286,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6454788323192272825, guid: 2fd78ed095502bc4ca1f8f01fb562083, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 846.8
+      value: 845.53
       objectReference: {fileID: 0}
     - target: {fileID: 6454788323192272825, guid: 2fd78ed095502bc4ca1f8f01fb562083, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.44
+      value: 0.96
       objectReference: {fileID: 0}
     - target: {fileID: 6454788323192272825, guid: 2fd78ed095502bc4ca1f8f01fb562083, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 100.34
+      value: 100.16
       objectReference: {fileID: 0}
     - target: {fileID: 6454788323192272825, guid: 2fd78ed095502bc4ca1f8f01fb562083, type: 3}
       propertyPath: m_LocalRotation.w
@@ -15336,6 +15322,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6454788323192272825, guid: 2fd78ed095502bc4ca1f8f01fb562083, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7709534172593876386, guid: 2fd78ed095502bc4ca1f8f01fb562083, type: 3}
+      propertyPath: m_Size.x
+      value: 1.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 7709534172593876386, guid: 2fd78ed095502bc4ca1f8f01fb562083, type: 3}
+      propertyPath: m_Size.y
+      value: 1.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 7709534172593876386, guid: 2fd78ed095502bc4ca1f8f01fb562083, type: 3}
+      propertyPath: m_Size.z
+      value: 1.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7709534172593876386, guid: 2fd78ed095502bc4ca1f8f01fb562083, type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7709534172593876386, guid: 2fd78ed095502bc4ca1f8f01fb562083, type: 3}
+      propertyPath: m_Center.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8232380237127637164, guid: 2fd78ed095502bc4ca1f8f01fb562083, type: 3}
