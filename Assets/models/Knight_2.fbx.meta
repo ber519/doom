@@ -1,12 +1,5 @@
 fileFormatVersion: 2
-guid: 1b7467e441dfddb44ae929f9884e99e8
-AssetOrigin:
-  serializedVersion: 1
-  productId: 246189
-  packageName: Adventure Game Environment Pack | URP
-  packageVersion: 2.0
-  assetPath: Assets/UnityTechnologies/AdventureGameEnvironment/Models/Walls/WallSciFiShortSmall.FBX
-  uploadId: 871060
+guid: 07e0240f95544da468d0fb261b55a3bb
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
@@ -14,8 +7,23 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: 07 - Default
-    second: {fileID: 2100000, guid: 8f650ec049f72d84baf4903cd44beabf, type: 2}
+      name: WhiteClown_material
+    second: {fileID: 2100000, guid: 7aafb79ab1e316a4ba1f443f092641fa, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: whiteclown_diffuse
+    second: {fileID: 2800000, guid: b6f9ce953d07aa64488e39bdca281e70, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: whiteclown_normal
+    second: {fileID: 2800000, guid: 42f7741dae3ca0543a9e3ef86c6da04f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: whiteclown_specular
+    second: {fileID: 2800000, guid: fe91b798d18fa2241aa2966fe51e0b97, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -26,7 +34,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
-    removeConstantScaleCurves: 1
+    removeConstantScaleCurves: 0
     motionNodeName: 
     animationImportErrors: 
     animationImportWarnings: 
@@ -58,7 +66,7 @@ ModelImporter:
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
@@ -114,7 +122,7 @@ ModelImporter:
   humanoidOversampling: 1
   avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
-  importBlendShapeDeformPercent: 0
+  importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
   userData: 
